@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "my_python_cicd"
+version = "0.1.0"
+description = "一个简单的计算器项目，用于演示 CI/CD"
+readme = "README.md"
+authors = [
+    {name = "zmcopq123-ai", email = "your-email@example.com"}
+]
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.9"
+dependencies = [
+    "pytest==7.4.0",
+    "pytest-cov==4.1.0",
+    "flake8==6.1.0",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/zmcopq123-ai/my_python_cicd"
+"Bug Reports" = "https://github.com/zmcopq123-ai/my_python_cicd/issues"
+"Source" = "https://github.com/zmcopq123-ai/my_python_cicd"
