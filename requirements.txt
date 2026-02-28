@@ -1,0 +1,11 @@
+playwright>=1.40.0
+python-dotenv>=1.0.0
+loguru>=0.7.2
+aiosqlite>=0.21.0
+
+# web依赖
+requests==2.32.3
+fastapi
+uvicorn
+sqlalchemy
+pydantic

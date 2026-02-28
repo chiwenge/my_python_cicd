@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  new-wenxin-agent:
+    image: d.fullcum.xyz/axialedge/wenxin-agent:latest
+    container_name: new-wenxin-agent
+    ports:
+      - "8001:8000"
+    volumes:
+      - ./app.db:/app/app.db
+      - ./logs:/app/logs
+      - ./cache:/app/cache
+      - ./api_key.txt:/app/api_key.txt
+    environment:
+      - DATABASE_URL=sqlite:///./app.db
+      - MAX_PAGES=8
+    restart: unless-stopped 
